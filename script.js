@@ -5,4 +5,10 @@ const img = document.getElementById  ('lampadina')
 const bottone = document.getElementById ('interrutore')
 
 
+// Quando l'utente fa clic, esegue la funzione dentro
 
+bottone.addEventListener('click', function () {
+
+
+
+}
