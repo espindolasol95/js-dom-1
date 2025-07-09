@@ -9,13 +9,21 @@ const bottone = document.getElementById ('interrutore')
  bottone.addEventListener('click', function () {
   
   // Se l'immagine attuale è quella della lampadina SPENTA
-  if (img.src.includes('spenta')) {
+  if (img.src.includes('white_lamp')) {
     
-    // Cambia l'immagine con quella della lampadina ACCESA
-    img.src= 'yellow_lamp.png' ;
+    // Cambio l'immagine con quella della lampadina ACCESA
+    img.src= 'img/yellow_lamp.png' ;
 
-    // Cambia il testo del bottone in "Spegni"
+    // Cambio il testo del bottone in "Spegni"
     bottone.textContent = 'Spegni';
 
+  
+} else {
+    // se è accesa... Cambio l'immagine con quella della lampadina SPENTA
+    img.src = 'img/white_lamp.png';
+
+    // Cambio il testo del bottone 
+    bottone.textContent = 'Accendi';
   }
-}
+
+});
