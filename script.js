@@ -5,10 +5,17 @@ const img = document.getElementById  ('lampadina')
 const bottone = document.getElementById ('interrutore')
 
 
-// Quando l'utente fa clic, esegue la funzione dentro
 
-bottone.addEventListener('click', function () {
+ bottone.addEventListener('click', function () {
+  
+  // Se l'immagine attuale è quella della lampadina SPENTA
+  if (img.src.includes('spenta')) {
+    
+    // Cambia l'immagine con quella della lampadina ACCESA
+    img.src= 'yellow_lamp.png' ;
 
+    // Cambia il testo del bottone in "Spegni"
+    bottone.textContent = 'Spegni';
 
-
+  }
 }
